@@ -1657,8 +1657,16 @@ input[type="button"].disabled {
     width: auto; /* Allows it to take the full content width */
     white-space: nowrap; /* Prevents line break */
     font-size: 0.9em; /* Optional: Adjust size if needed */
-    padding-left: 2em;
   }
+}
+
+@media screen and (max-width: 390px) {
+  #footer {
+    bottom: 0;
+  }
+  
+  #footer .copyright {
+    padding-left: 1.75em;
 }
 
   /* Center footer content */
