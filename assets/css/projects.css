@@ -1645,11 +1645,20 @@ input[type="button"].disabled {
     padding-top: 30px; /* Adjust as needed */
   }
 
-  @media screen and (max-width: 480px) {
-    #footer {
-      padding-right: 5.5em;
-    }
+@media screen and (max-width: 480px) {
+  #footer {
+    padding-right: 5.5em;
+    display: block; /* Ensures full-width behavior */
+    text-align: center; /* Keeps text aligned properly */
   }
+  
+  #footer .copyright {
+    display: inline-block; /* Ensures it stays on one line */
+    width: auto; /* Allows it to take the full content width */
+    white-space: nowrap; /* Prevents line break */
+    font-size: 0.9em; /* Optional: Adjust size if needed */
+  }
+}
 
   /* Center footer content */
   #footer {
