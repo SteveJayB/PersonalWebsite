@@ -1552,6 +1552,10 @@ input[type="button"].disabled {
   padding-top: 2em;
 }
 
+#project p {
+  text-align: center;
+}
+
 
  /* Image Carousel */
 .image-carousel {
@@ -1632,10 +1636,19 @@ input[type="button"].disabled {
 
 #footer {
   align-items: center;
+  margin-bottom: -2em;
 }
 
 #footer .icons {
   margin-top: 20px; /* Adjust the value as needed */
+}
+
+#footer .icons{
+  padding-right: 1.5em;
+}
+
+#footer .copyright{
+  padding-right: .5em;
 }
 
  /* More Responsive Adjustments */
@@ -1645,11 +1658,23 @@ input[type="button"].disabled {
     padding-top: 30px; /* Adjust as needed */
   }
 
+  #footer .icons{
+    padding-left: 4.5em;
+  }
+  
+  #footer .copyright{
+    padding-left: 4.5em;
+  }
+}
+
+/*Mobile Responsiveness*/
 @media screen and (max-width: 480px) {
   #footer {
-    padding-right: 5.5em;
+    padding-right: 4.5em;
     display: block; /* Ensures full-width behavior */
     text-align: center; /* Keeps text aligned properly */
+    margin-top: 10px; /* Adjust the value as needed */
+    margin-bottom: -3em; /* Adjust the value as needed */
   }
   
   #footer .copyright {
@@ -1658,19 +1683,19 @@ input[type="button"].disabled {
     white-space: nowrap; /* Prevents line break */
     font-size: 0.9em; /* Optional: Adjust size if needed */
   }
+
+  #project .last{
+    margin: 0;
+    padding-bottom: -3em;
+  }
 }
 
 @media screen and (max-width: 390px) {
   #footer {
     bottom: 0;
   }
-  
-  #footer .copyright {
-    padding-left: 1.75em;
-}
 
-  /* Center footer content */
-  #footer {
-    padding-left: 4em;
+  #footer .copyright {
+    padding-left: 5.4em;
   }
 }
