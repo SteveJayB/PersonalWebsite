@@ -1387,3 +1387,9 @@ input[type="button"]
       padding-top: 40px; /* Adjust the value as needed */
   }
 }
+
+@media screen and (max-width: 480px) {
+  #footer .icons {
+    padding: 2em .5em 0 0;
+  }
+}
