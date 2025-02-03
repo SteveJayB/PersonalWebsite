@@ -1265,8 +1265,6 @@ input[type="button"]
 }
 
  /* Footer */
-
- 
 #footer .copyright {
   color: #9fa3a6;
   font-size: 0.9em;
@@ -1279,7 +1277,13 @@ input[type="button"]
 
 #footer .icons {
   text-align: center;
+  padding-top:1em;
 }
+
+#footer .icons{
+  padding-right: 1.4em;
+}
+
 
 /* Header & Footer Icons*/
 #header .icon:after,
@@ -1342,7 +1346,7 @@ input[type="button"]
 }
 
 #resume img {
-  width: 90%; /* Scale images to 90% width */
+  width: 85%; /* Scale images to 90% width */
   display: block; /* Center images */
   margin: 0 auto; /* Center align */
   max-width: 100%; /* Ensure it doesn’t exceed container */
