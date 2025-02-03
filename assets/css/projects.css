@@ -1645,6 +1645,12 @@ input[type="button"].disabled {
     padding-top: 30px; /* Adjust as needed */
   }
 
+  @media screen and (max-width: 480px) {
+    #footer {
+      padding-right: 5.5em;
+    }
+  }
+
   /* Center footer content */
   #footer {
     padding-left: 4em;
