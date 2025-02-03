@@ -1760,9 +1760,9 @@ margin-bottom: 0; /* Remove margin to align properly */
 
 @media screen and (max-width: 480px) {
   .features .icon i {
-    font-size: 2.5em; /* Adjust size */
+    font-size: 1.5em; /* Adjust size */
     color: #00308F; /* Adjust color */
-    padding-top: .7em;
+    padding-top: 1.5em;
   }
 
   #footer .icons {
