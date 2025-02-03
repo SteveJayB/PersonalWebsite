@@ -1774,12 +1774,23 @@ margin-bottom: 0; /* Remove margin to align properly */
 #footer .copyright {
   color: #9fa3a6;
   font-size: 0.9em;
-  text-align: center;}
-  #footer .copyright a {
-    color: inherit; }
+  text-align: center;
+}
+  
+#footer .copyright a {
+    color: inherit; 
+}
 
 #footer .icons {
   text-align: center;
+}
+
+#footer .icons{
+  padding-right: .5em;
+}
+
+#footer .copyright{
+  padding-right: .5em;
 }
 
  /* Projects */
@@ -1825,8 +1836,9 @@ margin-bottom: 0; /* Remove margin to align properly */
   width: 100%; /* Ensures it takes full width for centering */
 }
 
+
 /* Mobile Browser Adjustments */
-@media screen and (max-width: 390px) {
+@media screen and (max-width: 480px) {
   #project .skills-button {
     padding-right: .85em;
   }
@@ -1840,3 +1852,16 @@ margin-bottom: 0; /* Remove margin to align properly */
   }
 }
 
+@media screen and (max-width: 390px) {
+  #project .skills-button {
+    padding-right: .85em;
+  }
+
+  #footer .icons{
+    padding-right: 1.5em;
+  }
+
+  #footer .copyright{
+    padding-right: .5em;
+  }
+}
