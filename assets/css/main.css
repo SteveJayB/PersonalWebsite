@@ -1789,6 +1789,7 @@ margin-bottom: 0; /* Remove margin to align properly */
   padding-top: 2em;
 }
 
+
 /* Header & Footer Icons*/
 #header .icon:after,
 #footer .icon:after {
@@ -1815,3 +1816,27 @@ margin-bottom: 0; /* Remove margin to align properly */
   opacity: 1;
   transform: translateY(0);
 }
+
+/* Center Project Buttons */
+#project .posts article .actions {
+  display: flex;
+  justify-content: center;
+  margin-top: 1em; /* Adjusts spacing */
+  width: 100%; /* Ensures it takes full width for centering */
+}
+
+/* Mobile Browser Adjustments */
+@media screen and (max-width: 390px) {
+  #project .skills-button {
+    padding-right: .85em;
+  }
+
+  #footer .icons{
+    padding-right: 1.5em;
+  }
+
+  #footer .copyright{
+    padding-right: .5em;
+  }
+}
+
