@@ -1734,7 +1734,7 @@ margin-bottom: 0; /* Remove margin to align properly */
 @media screen and (orientation: portrait) and (max-width: 480px) {
     #banner .image {
       max-height: 100vh;
-      opacity: 0.5; } 
+      opacity: 0..87; } 
   }
 
 
@@ -1755,6 +1755,18 @@ margin-bottom: 0; /* Remove margin to align properly */
     font-size: 2.5em; /* Adjust size */
     color: #00308F; /* Adjust color */
     padding-top: 1.15em;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .features .icon i {
+    font-size: 2.5em; /* Adjust size */
+    color: #00308F; /* Adjust color */
+    padding-top: .7em;
+  }
+
+  #footer .icons {
+    padding: 2em .5em 0 0;
   }
 }
 
@@ -1791,8 +1803,8 @@ margin-bottom: 0; /* Remove margin to align properly */
 
 
  /* More Responsive Adjustments */
-/* Initially hide sections */
-/* .hidden {
+/*Initially hide sections */
+.hidden {
   opacity: 0;
   transform: translateY(30px); /* Move sections slightly down */
   transition: opacity 0.5s ease-out, transform 0.5s ease-out;
@@ -1802,4 +1814,4 @@ margin-bottom: 0; /* Remove margin to align properly */
 .visible {
   opacity: 1;
   transform: translateY(0);
-} */
+}
