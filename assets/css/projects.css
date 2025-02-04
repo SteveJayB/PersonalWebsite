@@ -1556,6 +1556,10 @@ input[type="button"].disabled {
   text-align: center;
 }
 
+#project .last{
+  border-bottom: none;
+}
+
 
  /* Image Carousel */
 .image-carousel {
@@ -1682,6 +1686,7 @@ input[type="button"].disabled {
     width: auto; /* Allows it to take the full content width */
     white-space: nowrap; /* Prevents line break */
     font-size: 0.9em; /* Optional: Adjust size if needed */
+    padding-left: 5.5em;
   }
 
   #project .last{
