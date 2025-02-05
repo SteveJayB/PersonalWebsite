@@ -1290,6 +1290,11 @@ input[type="button"].disabled {
   width: 100%;
 }
 
+.posts article .image img {
+  width: 100%; /* Ensures the image takes the full width of its container */
+  height: 250px; /* Set a fixed height */
+  object-fit: cover; /* Ensures the image covers the area without distortion */
+}
 
 /* Large screens */
 @media screen and (max-width: 5000px) {
@@ -1902,3 +1907,4 @@ margin-bottom: 0; /* Remove margin to align properly */
     padding-right: .5em;
   }
 }
+
