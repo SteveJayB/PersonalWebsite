@@ -1448,6 +1448,8 @@ input[type="button"].disabled {
   border-bottom: solid 5px #00308F;
   padding: 6em 0 1em;
   position: relative;
+  align-items: center;
+  min-width: 370px;
 }
 
 #header > * {
@@ -1464,12 +1466,6 @@ input[type="button"].disabled {
 
 #header .icons {
   text-align: right;
-}
-
-#header {
-  display: flex;
-  align-items: center;
-  position: relative;
 }
 
 .nav-links {
@@ -1521,6 +1517,14 @@ input[type="button"].disabled {
     position: absolute;
     right: .2em;
     top: 2.5;
+  }
+
+  /* Ensure nav-links are always visible */
+  .nav-links {
+    display: flex;
+    opacity: 1; /* Make them visible */
+    transform: translateX(0); /* Remove shift effect */
+    padding-right: 3em;
   }
 }
 
