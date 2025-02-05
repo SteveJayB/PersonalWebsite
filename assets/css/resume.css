@@ -26,6 +26,7 @@ footer, header, hgroup, menu, nav, section {
 body {
   line-height: 1.15;
   -webkit-text-size-adjust: 100%;
+  min-width: 370px;
 }
 
 /* Remove list styles */
@@ -1262,9 +1263,14 @@ input[type="button"]
   /* Ensure nav-links are always visible */
   .nav-links {
     display: flex;
-    opacity: 1; /* Make them visible */
-    transform: translateX(0); /* Remove shift effect */
-    padding-right: 3em;
+    opacity: 1;
+    transform: translateX(0);
+    padding-right: 1em; /* Reduce padding from the right */
+    margin-left: -1em; /* Move closer to the logo */
+  }
+
+  .nav-links a:hover {
+    color: #f67878;
   }
 }
 
