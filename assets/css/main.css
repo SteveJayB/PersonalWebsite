@@ -1466,6 +1466,8 @@ input[type="button"].disabled {
   border-bottom: solid 5px #00308F;
   padding: 6em 0 1em;
   position: relative;
+  align-items: center;
+  min-width: 370px;
 }
 
 #header > * {
@@ -1482,12 +1484,6 @@ input[type="button"].disabled {
 
 #header .icons {
   text-align: right;
-}
-
-#header {
-  display: flex;
-  align-items: center;
-  position: relative;
 }
 
 .nav-links {
@@ -1540,7 +1536,17 @@ input[type="button"].disabled {
     right: .2em;
     top: 2.5;
   }
+
+  /* Ensure nav-links are always visible */
+  .nav-links {
+    display: flex;
+    opacity: 1; /* Make them visible */
+    transform: translateX(0); /* Remove shift effect */
+    padding-right: 3em;
+  }
 }
+
+  
 
 /* Banner */
 #banner {
@@ -1621,6 +1627,32 @@ input[type="button"].disabled {
     object-position: center;
     width: 100%;
     margin-top: auto;
+  }
+}
+
+@media screen and (min-width: 1280px) {
+  #banner {
+    display: flex;
+    flex-direction: row; /* Arrange items in a row */
+    justify-content: space-between; /* Push content to the edges */
+    align-items: center; /* Align items vertically */
+    height: auto;
+    gap: 0; /* Remove gap to keep elements closer */
+    padding: 0 2em; /* Add some padding for spacing */
+  }
+
+  #banner .content {
+    width: 50%; /* Adjust width */
+    text-align: left; /* Align text to the left */
+    padding: 0 1em; /* Reduce padding */
+    margin-top: 0; /* Reset margin */
+  }
+
+  #banner .image {
+    width: 45%; /* Keep image size consistent */
+    margin-bottom: 0; /* Reset margin */
+    display: flex;
+    justify-content: flex-end; /* Align image to the right */
   }
 }
 
