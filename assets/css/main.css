@@ -1495,7 +1495,7 @@ input[type="button"].disabled {
 .nav-links {
   display: flex;
   position: absolute;
-  left: 60px; /* Position relative to the logo */
+  left: 50px; /* Position relative to the logo */
   opacity: 0;
   transform: translateX(-20px); /* Initially shift links to the left */
   transition: transform 0.3s ease-out, opacity 0.3s ease-out;
