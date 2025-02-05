@@ -1266,7 +1266,6 @@ input[type="button"]
     opacity: 1;
     transform: translateX(0);
     padding-right: 1em; /* Reduce padding from the right */
-    margin-left: -1em; /* Move closer to the logo */
   }
 
   .nav-links a:hover {
